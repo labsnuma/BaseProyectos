@@ -59,7 +59,18 @@ public class PerfilMainActivity extends AppCompatActivity implements Card.OnFrag
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.perfil_activity_main);
+
+        try{
+
+            setContentView(R.layout.perfil_activity_main);
+        }catch (Exception e ){
+
+            System.out.println("ERRRRRRORRRRRRR "+e);
+
+
+
+        }
+
         edit = (Button) findViewById(R.id.btn_edit_perfil);
         // fotourl = getIntent().getExtras().getString("foto");
         iduser = getIntent().getExtras().getString("id_user");
