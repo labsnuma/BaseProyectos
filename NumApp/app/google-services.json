@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "623683923765",
-    "firebase_url": "https://numapp-67674.firebaseio.com",
-    "project_id": "numapp-67674",
-    "storage_bucket": "numapp-67674.appspot.com"
+    "project_number": "395787713480",
+    "firebase_url": "https://base-3a2ff.firebaseio.com",
+    "project_id": "base-3a2ff",
+    "storage_bucket": "base-3a2ff.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:623683923765:android:26bd9d3a2d925728",
+        "mobilesdk_app_id": "1:395787713480:android:1c0c89c80dcb1fa2",
         "android_client_info": {
-          "package_name": "com.numa.cardmax.numapp"
+          "package_name": "com.cardmax.base"
         }
       },
       "oauth_client": [
         {
-          "client_id": "623683923765-p1gfe8ih9sd6oat6and39ugak54e3qtm.apps.googleusercontent.com",
+          "client_id": "395787713480-f8r9utfo1vl7rg8avmsrond1po6e95eb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.numa.cardmax.numapp",
-            "certificate_hash": "7e63e99b6a1a81feaaf03747345c5fffed77bd8d"
+            "package_name": "com.cardmax.base",
+            "certificate_hash": "df4843b132798d1fa3ea63ba925fb722c651092a"
           }
         },
         {
-          "client_id": "623683923765-76a7nb07deerdctl54ibl08h2i29ctdm.apps.googleusercontent.com",
+          "client_id": "395787713480-rintt3d98j9lidu0ibmqgahrqtehg513.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDHvA17VVuagDD-WXLtb-Mlw1vOIIczo3E"
+          "current_key": "AIzaSyAss605xZlBPmyMzwvDY2v9n8SKVC8n07U"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "623683923765-76a7nb07deerdctl54ibl08h2i29ctdm.apps.googleusercontent.com",
+              "client_id": "395787713480-rintt3d98j9lidu0ibmqgahrqtehg513.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

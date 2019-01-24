@@ -1,19 +1,15 @@
 package com.cardmax.base.Muro;
 
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -29,15 +25,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.cardmax.base.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
 import com.cardmax.base.Chat.InicioActivity;
 import com.cardmax.base.Chat.LoginActivity;
 import com.cardmax.base.Chat.Recursos.CerrarSesion;
@@ -48,19 +35,24 @@ import com.cardmax.base.Muro.Fragmentos.CarnetFragment;
 import com.cardmax.base.Muro.Fragmentos.MuroFragment;
 import com.cardmax.base.Muro.Fragmentos.NavegadorFragment;
 import com.cardmax.base.Muro.Fragmentos.PerfilFragment;
-import com.cardmax.base.Muro.Objetos.ObjetoComentario;
 import com.cardmax.base.Perfil.OpcionesActivity;
 import com.cardmax.base.Perfil.PerfilMainActivity;
 import com.cardmax.base.Protocolo.FragmentProtocolo1;
-
+import com.cardmax.base.R;
 import com.cardmax.base.Services.MuroServ;
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class MuroMainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-
     private FragmentProtocolo1 protocolo;
     private FrameLayout mainFrame;
     private MuroFragment murofrag;
@@ -77,14 +69,11 @@ public class MuroMainActivity extends AppCompatActivity {
     private CircleImageView perfil;
     private DatabaseReference RootRef;
     private FirebaseUser currentUser;
-    EstadoOnline estadoOnline = new EstadoOnline();
+    private EstadoOnline estadoOnline = new EstadoOnline();
     public DatabaseReference mrootShared;
-    String mAuthShared;
-
+    private String mAuthShared;
     public String alert;
     private String key_youtube="AIzaSyB8MJf557XN9aDBtwFsD7rhhRMC77yBbeM";
-
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -165,6 +154,7 @@ public class MuroMainActivity extends AppCompatActivity {
             currentUserID = mAuth.getCurrentUser().getUid();
             miraEstadoOnline();
         } catch (Exception e) {
+            System.out.println(""+e);
             Log.e("Error1: ", e.getMessage());
         }
 
@@ -251,6 +241,10 @@ public class MuroMainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+
     private void miraEstadoOnline() {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         mAuthShared = mAuth.getCurrentUser().getUid();
