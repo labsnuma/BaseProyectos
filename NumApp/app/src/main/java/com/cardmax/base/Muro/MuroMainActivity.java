@@ -37,7 +37,7 @@ import com.cardmax.base.Muro.Fragmentos.NavegadorFragment;
 import com.cardmax.base.Muro.Fragmentos.PerfilFragment;
 import com.cardmax.base.Perfil.OpcionesActivity;
 import com.cardmax.base.Perfil.PerfilMainActivity;
-import com.cardmax.base.Protocolo.FragmentProtocolo1;
+
 import com.cardmax.base.R;
 import com.cardmax.base.Services.MuroServ;
 import com.google.firebase.auth.FirebaseAuth;
@@ -53,7 +53,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MuroMainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-    private FragmentProtocolo1 protocolo;
+
     private FrameLayout mainFrame;
     private MuroFragment murofrag;
     private PerfilFragment notifrag;
@@ -167,7 +167,7 @@ public class MuroMainActivity extends AppCompatActivity {
         perfilfrag = new CarnetFragment();
         notifrag = new PerfilFragment();
         navegador_web = new NavegadorFragment();
-        protocolo = new FragmentProtocolo1();
+
 
         mainFrame = (FrameLayout) findViewById(R.id.mainfragment);
         mTextMessage = (TextView) findViewById(R.id.message);
