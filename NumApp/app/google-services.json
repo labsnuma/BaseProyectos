@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "623683923765",
+    "firebase_url": "https://numapp-67674.firebaseio.com",
+    "project_id": "numapp-67674",
+    "storage_bucket": "numapp-67674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623683923765:android:26bd9d3a2d925728",
+        "android_client_info": {
+          "package_name": "com.numa.cardmax.numapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623683923765-p1gfe8ih9sd6oat6and39ugak54e3qtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.numa.cardmax.numapp",
+            "certificate_hash": "7e63e99b6a1a81feaaf03747345c5fffed77bd8d"
+          }
+        },
+        {
+          "client_id": "623683923765-76a7nb07deerdctl54ibl08h2i29ctdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHvA17VVuagDD-WXLtb-Mlw1vOIIczo3E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623683923765-76a7nb07deerdctl54ibl08h2i29ctdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
